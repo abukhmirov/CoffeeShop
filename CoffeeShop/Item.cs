@@ -8,6 +8,7 @@ namespace CoffeeShop
 {
     public class Item
     {
+        public int id;
         public string Name { get; set; }
         public int PriceInCents { get; set; }
 
@@ -22,7 +23,8 @@ namespace CoffeeShop
         public double PriceInDollars()
         {
             double priceInDollars = PriceInCents / 100;
-            return Math.Round(priceInDollars, 2);
+            return priceInDollars;
+                
         }
        
     }
